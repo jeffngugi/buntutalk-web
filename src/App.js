@@ -1,11 +1,20 @@
-import React from 'react'
+import {HashRouter as Router} from 'react-router-dom';
+import Routes from './components/Routes';
+import {Provider} from 'react-redux'
+import store from './store'
+import './App.css';
+import { Landing } from './pages';
 
-const App = () => {
+
+function App() {
   return (
-    <div>
-      Home page
-    </div>
-  )
+  // <Provider store={store}>
+    // <Landing />
+     <Router> 
+       <Routes /> 
+     </Router> 
+    // </Provider>
+  );
 }
 
-export default App
+export default App;

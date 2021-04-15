@@ -3,7 +3,7 @@ import React from 'react'
 const Landing = () => {
     return (
         <div>
-            <h1>Landing page without url</h1>
+            <h1>Landing page without redux</h1>
         </div>
     )
 }
