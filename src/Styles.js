@@ -67,3 +67,8 @@ export const NavLink = styled(Link)`
     padding:0.5rem 1rem;
   }
 `;
+
+export const OverlayDiv = styled.div`
+  background: rgba(50, 146, 0, 0.9); 
+
+`;

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {StyledLink, Button} from '../Styles';
+import {StyledLink, Button, OverlayDiv} from '../Styles';
 
 
 
@@ -15,7 +15,7 @@ const Landing = () => {
                     backgroundSize:'cover',
                     backgroundRepeat:'no-repeat',
                     height:'45vh',
-                }}><div>
+                }}>
                     <div className='container'>
                     <div className='row'>
                     <div className='col-sm-6 slider-text align-self-center'>
@@ -34,7 +34,7 @@ const Landing = () => {
                         </div>
                         </div>
                     </div>
-                    </div>
+                    
 
                 </div>
             </section>
