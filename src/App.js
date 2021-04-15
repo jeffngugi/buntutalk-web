@@ -1,4 +1,4 @@
-import {HashRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import Routes from './components/Routes';
 import {Provider} from 'react-redux'
 import store from './store'
@@ -9,7 +9,7 @@ import { Landing } from './pages';
 function App() {
   return (
   <Provider store={store}>
-    // <Landing />
+    {/* // <Landing /> */}
      <Router> 
        <Routes /> 
      </Router> 
