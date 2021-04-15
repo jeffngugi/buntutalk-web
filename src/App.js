@@ -4,6 +4,7 @@ import {Provider} from 'react-redux'
 import store from './store'
 import './App.css';
 import { Landing } from './pages';
+import Navbar from './components/Navbar';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   <Provider store={store}>
     {/* // <Landing /> */}
      <Router> 
+       <Navbar />
        <Routes /> 
      </Router> 
      </Provider>

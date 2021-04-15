@@ -1,6 +1,6 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
-import {Home, Landing, Login, Registration} from '../pages'
+import {Home, Landing, Login, Registration, Start} from '../pages'
 const Routes = () => {
     return (
         <Switch>
@@ -8,6 +8,7 @@ const Routes = () => {
             <Route exact path='/login' component={Login} />
             <Route exact path='/registration' component={Registration} />
             <Route exact path='/home' component={Home} />
+            <Route exact path='/start' component={Start} />
         </Switch>
     )
 }
