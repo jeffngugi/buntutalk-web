@@ -8,12 +8,12 @@ import { Landing } from './pages';
 
 function App() {
   return (
-  // <Provider store={store}>
+  <Provider store={store}>
     // <Landing />
      <Router> 
        <Routes /> 
      </Router> 
-    // </Provider>
+     </Provider>
   );
 }
 
