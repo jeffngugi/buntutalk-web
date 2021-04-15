@@ -3,14 +3,16 @@ import Routes from './components/Routes';
 import {Provider} from 'react-redux'
 import store from './store'
 import './App.css';
+import { Landing } from './pages';
 
 
 function App() {
   return (
   <Provider store={store}>
-    <Router>
-      <Routes />
-    </Router>
+    <Landing />
+    {/* <Router> */}
+      {/* <Routes /> */}
+    {/* </Router> */}
     </Provider>
   );
 }
