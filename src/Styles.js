@@ -2,11 +2,15 @@ import styled,{ css  } from 'styled-components';
 import {Link} from 'react-router-dom';
 
 export const ContainerFluid = styled.div`
+    dispaly:'flex';
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    padding-top:30px;
+    padding-bottom:30px;
     margin-right: auto;
     margin-left: auto;
+    background-color: ${props => props.bgcolor || "null"};
 `;
 
 export const Button = styled.button`
@@ -16,10 +20,10 @@ export const Button = styled.button`
     border-radius:${props => props.br || '3px'};
     border:none;
     &:hover {
-        padding:4px 7px;
+        padding:3px 7px;
         color: ${props => props.color || "#329200"};
-        background-color: ${props => props.bgcolor || "white"};
-        border-radius:${props => props.br || '3px'};
+        background-color: ${props => props.bghover || "white"};
+        border-radius:${props => props.br || '2px'};
         border-color: ${props => props.color || "#329200"};;
         border-style:solid
       }
@@ -27,7 +31,7 @@ export const Button = styled.button`
 
 
 export const StyledLink = styled(Link)`
-  color: ${props => props.color || "white"};;
+  color: ${props => props.color || "white"};
   text-decoration: none;
   position: relative;
   background-color: ${props => props.bgcolor || "#329200"};
@@ -71,4 +75,54 @@ export const NavLink = styled(Link)`
 export const OverlayDiv = styled.div`
   background: rgba(50, 146, 0, 0.9); 
 
+`;
+
+export const List = styled.ul`
+  list-style:none;
+  padding:0px 20px;
+  display: flex;
+  margin-bottom: 0;
+  list-style: none;
+`;
+
+export const ListItem = styled.li`
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin:0px 10px;
+    :first-of-type {
+        border-top: none;
+        margin-left:0px;
+      }   
+`;
+
+export const H1 = styled.h1`
+color: ${props => props.color || "black"};
+`;
+
+export const H2 = styled.h2`
+color: ${props => props.color || "black"};
+`;
+
+export const H3 = styled.h3`
+color: ${props => props.color || "black"};
+`;
+
+export const H4 = styled.h4`
+color: ${props => props.color || "black"};
+`;
+
+export const P1 = styled.p`
+color: ${props => props.color || "black"};
+`;
+
+export const P2 = styled.p`
+color: ${props => props.color || "black"};
+`;
+
+export const P3 = styled.p`
+color: ${props => props.color || "black"};
+`;
+
+export const P4 = styled.p`
+color: ${props => props.color || "black"};
 `;
