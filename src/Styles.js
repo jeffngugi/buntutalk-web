@@ -14,27 +14,43 @@ export const ContainerFluid = styled.div`
 `;
 
 export const Button = styled.button`
-    padding:5px 10px;
-    color: ${props => props.color || "white"};
+    padding:2px 10px;
     background-color: ${props => props.bgcolor || "#329200"};
     border-radius:${props => props.br || '3px'};
     border:none;
     &:hover {
-        padding:3px 7px;
-        color: ${props => props.color || "#329200"};
-        background-color: ${props => props.bghover || "white"};
+        padding:1px 7px;        
+        background-color: ${props => props.bghover || "transparent"};
         border-radius:${props => props.br || '2px'};
         border-color: ${props => props.color || "#329200"};;
         border-style:solid
       }
 `;
 
+export const AccordionBtn = styled.button`
+    padding:1px 7px;
+    background-color: ${props => props.bgcolor || "transparent"};
+    border:none;
+    outline:none;
+    &:hover {
+        background-color: ${props => props.bghover || "white"}; 
+        border:none
+        outline:none; 
+    }
+    &.active {
+      padding:1px 5px;        
+      background-color: ${props => props.bghover || "white"};  
+      border:none;
+      outline:none;
+  }
 
-export const StyledLink = styled(Link)`
+`;
+
+export const UnstyledLink = styled(Link)`
   color: ${props => props.color || "white"};
   text-decoration: none;
   position: relative;
-  background-color: ${props => props.bgcolor || "#329200"};
+  background-color: ${props => props.bgcolor || ""};
   padding:1rem;
   &:hover{
     color: ${props => props.color || "#329200"};
@@ -48,6 +64,23 @@ export const StyledLink = styled(Link)`
   }
 `;
 
+export const StyledLink = styled(Link)`
+color: ${props => props.color || "gray"};
+text-decoration: none;
+position: relative;
+// padding:1rem;
+margin:0 0.5rem
+background-color: ${props => props.bgcolor || ""};
+border:none;
+&:hover{
+  color: ${props => props.color || "#329200"};
+  hcolor: ${props => props.color || "#329200"};
+  text-decoration: none;
+  position: relative;
+  font-weight:bold;
+}
+`;
+
 export const NavLink = styled(Link)`
   text-decoration: none;
   margin: 1rem;
@@ -55,14 +88,17 @@ export const NavLink = styled(Link)`
   position: relative;
   dispay:block;
   padding:0.5rem 1rem;
+  border-radius:12px 0 12px 0;
+  background-color: ${props => props.bgcolor || ""};
   &&& {
-    color: #329200;
+    color:${props => props.color || "#329200"};
   };
   &:hover{
     &&& {
-        color: white;
+        color: ${props => props.chover || "white"};;
       };
-    background-color: ${props => props.bgcolor || "#329200"};
+    
+    background-color: ${props => props.bghover || "#329200"};
     text-decoration: none;
     margin: 1rem;
     position: relative;

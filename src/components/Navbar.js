@@ -34,9 +34,9 @@ const Navbar = () => {
                     <NavLink className="nav-link" to='/login'>Login</NavLink>
                     </li>
                     <li className="nav-item">
-                    
-                    <StyledLink className="nav-link" to='/start'>Get Started</StyledLink>
-                    
+                    <NavLink bghover='transparent' bgcolor='#329200' chover='#329200' color='white' className="nav-link" to='/start'>
+                        Get Started
+                    </NavLink>
                     </li>
                     
                 </ul>
