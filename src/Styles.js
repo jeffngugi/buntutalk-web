@@ -113,6 +113,14 @@ export const OverlayDiv = styled.div`
 
 `;
 
+export const MyDiv = styled.div`
+    margin-top:${props => props.mtop || ""};
+    margin-bottom:${props => props.mbottom || ""};
+    padding-top:${props => props.ptop || ""};
+    padding-bottom:${props => props.bottom || ""};
+    background-color:'red';
+`;
+
 export const List = styled.ul`
   list-style:none;
   padding:0px 20px;

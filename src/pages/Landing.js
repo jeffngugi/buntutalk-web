@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Accordion from '../components/Accordion/Accordion'
-import {StyledLink, Button, ContainerFluid, H1, H4, P1, H3,List, ListItem, NavLink, H2} from '../Styles';
+import {MyDiv, Button, ContainerFluid, H1, H4, P1, H3,List, ListItem, NavLink, H2} from '../Styles';
 
 
 
@@ -41,7 +41,6 @@ const Landing = () => {
                             
                             <H1 color='#329200'>You deserve</H1>
                             <H4 color='white'>to be Happy</H4>
-                            <P1 color='black'>More</P1>
                             <NavLink bgcolor='#329200' color='white' bghover='transparent' >Get Started</NavLink>
                             
                         </div>
@@ -64,7 +63,7 @@ const Landing = () => {
                 <ContainerFluid bgcolor='white'>
                 <div className='container'>
                 
-                    <Button>Jeff ngugi</Button>
+                    <H3>ICONS???</H3>
                 </div>
                 </ContainerFluid>
             </section>
@@ -81,13 +80,13 @@ const Landing = () => {
                 <div className='row'>
                         <List className="navbar-nav list-group-horizontal">
                             <ListItem className="nav-item">
-                            <H3>Licensed</H3>
+                            <H4>Licensed</H4>
                             </ListItem>
                             <ListItem className="nav-item">
-                            <H3>Experienced</H3>
+                            <H4>Experienced</H4>
                             </ListItem>
                             <ListItem className="nav-item">
-                            <H3>Verified</H3>
+                            <H4>Verified</H4>
                             </ListItem>
                          </List>       
                          <H1>Meet our professional counselors that you can trust</H1> 
@@ -103,9 +102,45 @@ const Landing = () => {
         )
     }
 
+    const renderTestimonials = ()=>{
+        return(
+            <div className='container' style={{paddingTop:"20px",paddingBottom:"20px",}}>
+                
+                <H2>Testimonials</H2>
+                
+            </div>
+        )
+    }
+
+    const renderHowItWorks = ()=>{
+        return(
+            <ContainerFluid bgcolor='rgba(0,255,0,0.2)'>
+                <div className='container'>
+                    <H3>How Therapy Works on BuntuTalk</H3>
+                    <div className='row py-3'>
+                        <div className='col-sm-6'>
+                            <H4>Getting Started</H4>
+                        </div>
+                        <div className='col-sm-6'><H4>During Therapy</H4></div>
+                    </div>
+                </div>
+            </ContainerFluid>
+        )
+    }
+
+
+    const renderBUntuVsT = ()=>{
+        return(
+            <div className='container d-flex justify-content-center' style={{paddingTop:"20px",paddingBottom:"20px",}}>
+                <H4>BuntuTalk vs Traditional Counselling </H4>
+
+            </div>
+        )
+    }
+
    const renderSubscribe = ()=>{
        return(
-           <div className='container'>
+           <div className='container' style={{paddingTop:"25px",paddingBottom:"25px",}}>
                <div className='d-flex justify-content-around align-items-center '>
                     <img src={`/images/logo.png`}  />
                     <H1>Subscribe</H1>
@@ -130,8 +165,6 @@ const Landing = () => {
                             content={data.content}  />
                            ))
                        }
-                         
-                       
                         </div>
                        
                         </div>
@@ -150,6 +183,9 @@ const Landing = () => {
         {renderHero()}
         {renderIcons()}
         {renderCallTA()}
+        {renderTestimonials()}
+        {renderHowItWorks()}
+        {renderBUntuVsT()   }
         {renderAsked()}
         {renderSubscribe()}
         </>
