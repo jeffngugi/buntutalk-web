@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Accordion from '../components/Accordion/Accordion'
-import {MyDiv, Button, ContainerFluid, H1, H4, P1, H3,List, ListItem, NavLink, H2} from '../Styles';
+import {UL, Button, ContainerFluid, H1,H2, H4, LI, H3,List, ListItem, NavLink, P3, StyledLink} from '../Styles';
 
 
 
@@ -9,11 +9,11 @@ const Landing = () => {
     const Faqs = [
         {
             title:"What is BuntuTalk",
-            content:"Buntu talk is a platform to connect pychiatriest with persons who may need their help"
+            content:"Buntu talk is a platform to connect pychiatriest with persons who may need their help Buntu talk is a platform to connect pychiatriest with persons who may need their help"
         },
         {
             title:"Jeff ngugi",
-            content:"jeff ngugi mwathi"
+            content:"TeenCounseling is an online platform where teens from ages 13-19 can get help from a licensed therapist online. TeenCounseling.com makes affordable, discreet, professional counseling available through a computer, tablet, or smartphone. All teens can benefit from having a professional counselor at their fingertips to discuss issues such as coping skills, anxiety, stress, self-esteem, depression, bullying, anger, eating disorders or any other mental challenges."
         },
         {
             title:"Jeff ngugi",
@@ -33,7 +33,7 @@ const Landing = () => {
                     backgroundPosition:'center',
                     backgroundSize:'cover',
                     backgroundRepeat:'no-repeat',
-                    height:'45vh',
+                    height:'48vh',
                 }}>
                     <div className='container h-100' >
                     <div className='row h-100' >
@@ -63,7 +63,7 @@ const Landing = () => {
                 <ContainerFluid bgcolor='white'>
                 <div className='container'>
                 
-                    <H3>ICONS???</H3>
+                    <H3 className='text-center'>ICONS???</H3>
                 </div>
                 </ContainerFluid>
             </section>
@@ -78,6 +78,7 @@ const Landing = () => {
                 <div className='container'>
                 
                 <div className='row'>
+                    <div className='col-sm-12'>
                         <List className="navbar-nav list-group-horizontal">
                             <ListItem className="nav-item">
                             <H4>Licensed</H4>
@@ -89,10 +90,11 @@ const Landing = () => {
                             <H4>Verified</H4>
                             </ListItem>
                          </List>       
-                         <H1>Meet our professional counselors that you can trust</H1> 
+                         <H1 color='#329200'>Meet our professional counselors that you can trust</H1> 
                          
                          
                         <Button>Get Matched to a therapist</Button>
+                        </div>
                     </div>
                 </div>
                
@@ -106,8 +108,28 @@ const Landing = () => {
         return(
             <div className='container' style={{paddingTop:"20px",paddingBottom:"20px",}}>
                 
-                <H2>Testimonials</H2>
-                
+                <H3 color='#329200' className='text-center mb-4'>Testimonials</H3>
+                <div className='row '>
+                <div className='col-sm-4 text-center'>
+                <img src={`/images/user1.jpeg`}  width='80' height='80'/>
+                    <P3>
+                                    "The biggest achievement I've made is, truly, fighting for myself. Through working with Aiko and taking the time to discuss various issues with her, I've become a bigger advocate for myself, and I'm so proud of that."
+                                    </P3>
+                    </div><div className='col-sm-4 text-center'>
+                    <img src={`/images/user1.jpeg`}  width='80' height='80'/>
+                    <P3>
+                                    "The biggest achievement I've made is, truly, fighting for myself. Through working with Aiko and taking the time to discuss various issues with her, I've become a bigger advocate for myself, and I'm so proud of that."
+                                    </P3>
+                    </div><div className='col-sm-4 text-center'>
+                    <img src={`/images/user1.jpeg`}  width='80' height='80'/>
+                    <P3>
+                                    "The biggest achievement I've made is, truly, fighting for myself. Through working with Aiko and taking the time to discuss various issues with her, I've become a bigger advocate for myself, and I'm so proud of that."
+                                    </P3>
+                    </div>
+                    
+                    
+                </div>
+                <P3 className='text-center'>Jeer</P3>
             </div>
         )
     }
@@ -115,13 +137,34 @@ const Landing = () => {
     const renderHowItWorks = ()=>{
         return(
             <ContainerFluid bgcolor='rgba(0,255,0,0.2)'>
-                <div className='container'>
-                    <H3>How Therapy Works on BuntuTalk</H3>
-                    <div className='row py-3'>
-                        <div className='col-sm-6'>
-                            <H4>Getting Started</H4>
+                <div className='container text-center'>
+                    <div className='my-1' >
+                    <H3 className='' color='#329200'>How Therapy Works on BuntuTalk</H3>
+                    </div>
+                    
+                    <div className='row'>
+                        <div className='col-sm-6 d-flex justify-content-center '>
+                            <div>
+                            <H4 >Getting Started</H4>
+                            <UL>
+                                <LI>Jeff ngugi</LI>
+                                <LI>Jeff ngugi</LI>
+                                <LI>Jeff ngugi</LI>
+                            </UL>
+                            </div>
+                            
                         </div>
-                        <div className='col-sm-6'><H4>During Therapy</H4></div>
+                        <div className='col-sm-6 d-flex justify-content-center '>
+                            <div>
+                            <H4 >Getting Started</H4>
+                            <UL>
+                                <LI>Jeff ngugi</LI>
+                                <LI>Jeff ngugi</LI>
+                                <LI>Jeff ngugi</LI>
+                            </UL>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </ContainerFluid>
@@ -131,9 +174,13 @@ const Landing = () => {
 
     const renderBUntuVsT = ()=>{
         return(
-            <div className='container d-flex justify-content-center' style={{paddingTop:"20px",paddingBottom:"20px",}}>
-                <H4>BuntuTalk vs Traditional Counselling </H4>
-
+            <div className='container text-center' style={{paddingTop:"20px",paddingBottom:"20px",}}>
+                
+                <H3 color='#329200'>BuntuTalk vs Traditional Counselling </H3>
+                
+                <p>This is jeff ngughjh</p>
+                
+                
             </div>
         )
     }
@@ -141,10 +188,13 @@ const Landing = () => {
    const renderSubscribe = ()=>{
        return(
            <div className='container' style={{paddingTop:"25px",paddingBottom:"25px",}}>
-               <div className='d-flex justify-content-around align-items-center '>
-                    <img src={`/images/logo.png`}  />
-                    <H1>Subscribe</H1>
+               <div className='row'>
+               <div className='col-sm-12 d-flex justify-content-around align-items-center '>
+                    <img src={`/icons/mail.png`} height='80' />
+                    <H2>Subscribe</H2>
                </div>
+               </div>
+               
            </div>
        )
    }
@@ -153,11 +203,11 @@ const Landing = () => {
        return(
            <section>
            <ContainerFluid bgcolor='rgba(0,255,0,0.2)'>
-               <div className='container'>
+               <div className='container text-center'>
                     <div className='row'>
                         <div className='col my-auto d-flex'>
                         <div>
-                        <H3>Frequenty Asked Quenstions</H3>
+                        <H3 color='#329200'>Frequenty Asked Quenstions</H3>
                        {
                            Faqs.map((data, index)=>(
                             <Accordion

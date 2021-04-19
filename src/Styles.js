@@ -170,3 +170,14 @@ color: ${props => props.color || "black"};
 export const P4 = styled.p`
 color: ${props => props.color || "black"};
 `;
+
+export const UL = styled.ul`
+list-style: circle inside none;
+padding:1px;
+margin:0rem 1rem;
+`;
+
+export const LI = styled.li`
+    margin:5px;
+
+`;

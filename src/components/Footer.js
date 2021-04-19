@@ -7,6 +7,7 @@ const Footer = () => {
                <div className='container'>
                 <div className='row'>
                     <div className='col-sm-3'>
+                    <img src={`/images/logo.png`} className='img-fluid' style={{height:'2rem', marginBottom:'2px'}}/>
                         <H3>Social Links</H3>
                         <StyledLink>Unlimited Messaging Therapy</StyledLink><br />
                         <StyledLink>Buntutalk for Business</StyledLink><br />
