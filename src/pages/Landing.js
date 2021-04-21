@@ -2,28 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Accordion from '../components/Accordion/Accordion'
 import {UL, Button, ContainerFluid, H1,H2, H4, LI, H3,List, ListItem, NavLink, P3, StyledLink} from '../Styles';
+import { Faqs,BuntuvsOther  } from '../utils/datas';
 
 
 
 const Landing = () => {
-    const Faqs = [
-        {
-            title:"What is BuntuTalk",
-            content:"Buntu talk is a platform to connect pychiatriest with persons who may need their help Buntu talk is a platform to connect pychiatriest with persons who may need their help"
-        },
-        {
-            title:"Jeff ngugi",
-            content:"TeenCounseling is an online platform where teens from ages 13-19 can get help from a licensed therapist online. TeenCounseling.com makes affordable, discreet, professional counseling available through a computer, tablet, or smartphone. All teens can benefit from having a professional counselor at their fingertips to discuss issues such as coping skills, anxiety, stress, self-esteem, depression, bullying, anger, eating disorders or any other mental challenges."
-        },
-        {
-            title:"Jeff ngugi",
-            content:"jeff ngugi mwathi"
-        },
-        {
-            title:"Jeff ngugi",
-            content:"jeff ngugi mwathi"
-        },
-    ]
+   
     const renderHero = ()=>{
         return(
             <section className='hero'> 
@@ -146,22 +130,24 @@ const Landing = () => {
                         <div className='col-sm-6 d-flex justify-content-center '>
                             <div>
                             <H4 >Getting Started</H4>
-                            <UL>
-                                <LI>Jeff ngugi</LI>
-                                <LI>Jeff ngugi</LI>
-                                <LI>Jeff ngugi</LI>
-                            </UL>
+                          <div className='row'>
+                            <div className='col-sm-6'>1</div>
+                            <div className='col-sm-6'>2</div>
+                            <div className='col-sm-6'>3</div>
+                            <div className='col-sm-6'>4</div>
+                          </div>
                             </div>
                             
                         </div>
                         <div className='col-sm-6 d-flex justify-content-center '>
                             <div>
-                            <H4 >Getting Started</H4>
-                            <UL>
-                                <LI>Jeff ngugi</LI>
-                                <LI>Jeff ngugi</LI>
-                                <LI>Jeff ngugi</LI>
-                            </UL>
+                            <H4 >During Therapy</H4>
+                            <div className='row'>
+                            <div className='col-sm-6'>1</div>
+                            <div className='col-sm-6'>2</div>
+                            <div className='col-sm-6'>3</div>
+                            <div className='col-sm-6'>4</div>
+                          </div>
                             </div>
                             
                         </div>
@@ -177,8 +163,27 @@ const Landing = () => {
             <div className='container text-center' style={{paddingTop:"20px",paddingBottom:"20px",}}>
                 
                 <H3 color='#329200'>BuntuTalk vs Traditional Counselling </H3>
-                
-                <p>This is jeff ngughjh</p>
+                <div className='table-responsive-sm'>
+                    <table className='table table-bordered'>
+                    <thead>
+                    <tr>
+                        <th scope="col">BuntuTalk</th>
+                        <th scope="col">Traditional</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            BuntuvsOther.map((data, index)=>(
+                                <tr>
+                                <td>{data.buntu}</td>
+                                <td>{data.traditional}</td>
+                                </tr>
+                            ))
+                        }
+                    </tbody>
+                    </table>
+                </div>
+               
                 
                 
             </div>
@@ -211,8 +216,8 @@ const Landing = () => {
                        {
                            Faqs.map((data, index)=>(
                             <Accordion
-                            title={data.title}
-                            content={data.content}  />
+                            title={data.question}
+                            content={data.answer}  />
                            ))
                        }
                         </div>
