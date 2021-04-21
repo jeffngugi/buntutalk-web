@@ -131,10 +131,10 @@ const Landing = () => {
                             <div>
                             <H4 >Getting Started</H4>
                           <div className='row'>
-                            <div className='col-sm-6'>1</div>
-                            <div className='col-sm-6'>2</div>
-                            <div className='col-sm-6'>3</div>
-                            <div className='col-sm-6'>4</div>
+                            <div className='col-6'>1</div>
+                            <div className='col-6'>2</div>
+                            <div className='col-6'>3</div>
+                            <div className='col-6'>4</div>
                           </div>
                             </div>
                             
@@ -143,10 +143,10 @@ const Landing = () => {
                             <div>
                             <H4 >During Therapy</H4>
                             <div className='row'>
-                            <div className='col-sm-6'>1</div>
-                            <div className='col-sm-6'>2</div>
-                            <div className='col-sm-6'>3</div>
-                            <div className='col-sm-6'>4</div>
+                            <div className='col-6'>1</div>
+                            <div className='col-6'>2</div>
+                            <div className='col-6'>3</div>
+                            <div className='col-6'>4</div>
                           </div>
                             </div>
                             
