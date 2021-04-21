@@ -181,3 +181,22 @@ export const LI = styled.li`
     margin:5px;
 
 `;
+
+// 
+export const HowItem = styled.div`
+      display: flex;
+      justify-content: center;
+      padding: .5rem;
+      background-color:'yellow'
+      color: 'green';
+      font-size: 1rem;
+      font-weight: bold;
+    
+`;
+
+export const HowGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);;
+  grid-template-rows: 50px 50px;
+  grid-gap: 5px;
+`;

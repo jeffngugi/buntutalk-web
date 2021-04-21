@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Accordion from '../components/Accordion/Accordion'
-import {UL, Button, ContainerFluid, H1,H2, H4, LI, H3,List, ListItem, NavLink, P3, StyledLink} from '../Styles';
+import {HowGrid, HowItem, Button, ContainerFluid, H1,H2, H4, LI, H3,List, ListItem, NavLink, P3, StyledLink} from '../Styles';
 import { Faqs,BuntuvsOther  } from '../utils/datas';
 
 
@@ -122,32 +121,32 @@ const Landing = () => {
         return(
             <ContainerFluid bgcolor='rgba(0,255,0,0.2)'>
                 <div className='container text-center'>
-                    <div className='my-1' >
+                    <div className='my-2' >
                     <H3 className='' color='#329200'>How Therapy Works on BuntuTalk</H3>
                     </div>
                     
                     <div className='row'>
                         <div className='col-sm-6 d-flex justify-content-center '>
                             <div>
-                            <H4 >Getting Started</H4>
-                          <div className='row'>
-                            <div className='col-6'>1</div>
-                            <div className='col-6'>2</div>
-                            <div className='col-6'>3</div>
-                            <div className='col-6'>4</div>
-                          </div>
+                            <H4>Getting Started</H4>
+                            <HowGrid>
+                                <HowItem>1.)First step  </HowItem>
+                                <HowItem>2)secind step </HowItem>
+                                <HowItem>3) Third Step</HowItem>
+                                <HowItem>4) Fourth Step</HowItem>
+                            </HowGrid>
                             </div>
                             
                         </div>
                         <div className='col-sm-6 d-flex justify-content-center '>
                             <div>
                             <H4 >During Therapy</H4>
-                            <div className='row'>
-                            <div className='col-6'>1</div>
-                            <div className='col-6'>2</div>
-                            <div className='col-6'>3</div>
-                            <div className='col-6'>4</div>
-                          </div>
+                            <HowGrid>
+                                 <HowItem>1.)First step  </HowItem>
+                                <HowItem>2)secind step </HowItem>
+                                <HowItem>3) Third Step</HowItem>
+                                <HowItem>4) Fourth Step</HowItem>
+                            </HowGrid>
                             </div>
                             
                         </div>
